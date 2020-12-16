@@ -1,160 +1,445 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/design.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <title>삼천리|HOME</title>
 </head>
+
 <body>
     <header id="header">
-        <div class="logo">
-            <a href="index.html"><img src="./common/logo1.gif" alt="삼천리"></a>
-            <a href="index.html"><img src="./common/logo2.gif.png" alt="삼천리"></a>
-        </div>
-        <div class="gnb-wrap">
-            <ul class="gnb">
-                <li>
-                    <a href="#">기업소개</a>
-                    <ul>
-                        <li><a href="#">그룹소개</a></li>
-                        <li><a href="#">CEO인사말</a></li>
-                        <li><a href="#">연혁</a></li>
-                        <li><a href="#">CI</a></li>
-                        <li><a href="#">고객만족</a></li>
-                        <li><a href="#">사회공헌</a></li>
-                        <li><a href="#">GWP</a></li>
-                        <li><a href="#">찾아오시는 길</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">사업소개</a>
-                    <ul>
-                        <li><a href="#">도시가스사업</a></li>
-                        <li><a href="#">발전 및 집단에너지사업</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">R&amp;D</a>
-                    <ul>
-                        <li><a href="#">기술연구소 소개</a></li>
-                        <li><a href="#">연구 현황</a></li>
-                        <li><a href="#">커뮤니티</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">투자정보</a>
-                    <ul>
-                        <li><a href="#">지배구조</a></li>
-                        <li><a href="#">재무정보</a></li>
-                        <li><a href="#">주가정보</a></li>
-                        <li><a href="#">공시/공고</a></li>
-                        <li><a href="#">IR자료실</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">홍보센터</a>
-                    <ul>
-                        <li><a href="#">뉴스센터</a></li>
-                        <li><a href="#">홍보영상</a></li>
-                        <li><a href="#">사보</a></li>
-                        <li><a href="#">Annual Report</a></li>
-                        <li><a href="#">PR Library</a></li>
-                        <li><a href="#">사이버역사관</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">고객센터</a>
-                    <ul>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">안내</a></li>
-                        <li><a href="#">조회&#47;납부</a></li>
-                        <li><a href="#">신청</a></li>
-                        <li><a href="#">문의</a></li>
-                        <li><a href="#">전기&#40;광명 역세권&#41;</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <select name="" id="">
-                <option value="한국어" selected>KOR</option>
-                <option value="영어">ENG</option>
-            </select>
-        </div>
-        <div class="allmenu-wrap">
-            <div class="btn-allmenu">
-                <a href="#">
-                    <span></span>
-                </a>
+        <div class="header-section">
+            <div class="logo">
+                <h1>
+                    <a href="index.html"><img src="./images/common/logo1.png" alt="삼천리"></a>
+                </h1>
             </div>
-            <ul class="allmenu">
-                <li>
-                    <a href="#">기업소개</a>
-                    <ul>
-                        <li><a href="#">그룹소개</a></li>
-                        <li><a href="#">CEO인사말</a></li>
-                        <li><a href="#">연혁</a></li>
-                        <li><a href="#">CI</a></li>
-                        <li><a href="#">고객만족</a></li>
-                        <li><a href="#">사회공헌</a></li>
-                        <li><a href="#">GWP</a></li>
-                        <li><a href="#">찾아오시는 길</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">사업소개</a>
-                    <ul>
-                        <li><a href="#">도시가스사업</a></li>
-                        <li><a href="#">발전 및 집단에너지사업</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">R&amp;D</a>
-                    <ul>
-                        <li><a href="#">기술연구소 소개</a></li>
-                        <li><a href="#">연구 현황</a></li>
-                        <li><a href="#">커뮤니티</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">투자정보</a>
-                    <ul>
-                        <li><a href="#">지배구조</a></li>
-                        <li><a href="#">재무정보</a></li>
-                        <li><a href="#">주가정보</a></li>
-                        <li><a href="#">공시/공고</a></li>
-                        <li><a href="#">IR자료실</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">홍보센터</a>
-                    <ul>
-                        <li><a href="#">뉴스센터</a></li>
-                        <li><a href="#">홍보영상</a></li>
-                        <li><a href="#">사보</a></li>
-                        <li><a href="#">Annual Report</a></li>
-                        <li><a href="#">PR Library</a></li>
-                        <li><a href="#">사이버역사관</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">고객센터</a>
-                    <ul>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">안내</a></li>
-                        <li><a href="#">조회&#47;납부</a></li>
-                        <li><a href="#">신청</a></li>
-                        <li><a href="#">문의</a></li>
-                        <li><a href="#">전기&#40;광명 역세권&#41;</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="gnb-wrap">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">기업소개</a>
+                        <ul>
+                            <li><a href="#">그룹소개</a></li>
+                            <li><a href="#">CEO인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">CI</a></li>
+                            <li><a href="#">고객만족</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">GWP</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사업소개</a>
+                        <ul>
+                            <li><a href="#">도시가스사업</a></li>
+                            <li><a href="#">발전 및 집단에너지사업</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">R&amp;D</a>
+                        <ul>
+                            <li><a href="#">기술연구소 소개</a></li>
+                            <li><a href="#">연구 현황</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">투자정보</a>
+                        <ul>
+                            <li><a href="#">지배구조</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">공시/공고</a></li>
+                            <li><a href="#">IR자료실</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보센터</a>
+                        <ul>
+                            <li><a href="#">뉴스센터</a></li>
+                            <li><a href="#">홍보영상</a></li>
+                            <li><a href="#">사보</a></li>
+                            <li><a href="#">Annual Report</a></li>
+                            <li><a href="#">PR Library</a></li>
+                            <li><a href="#">사이버역사관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">안내</a></li>
+                            <li><a href="#">조회&#47;납부</a></li>
+                            <li><a href="#">신청</a></li>
+                            <li><a href="#">문의</a></li>
+                            <li><a href="#">전기&#40;광명 역세권&#41;</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <select name="lang" id="lang">
+                    <option value="kor" style="color:#282828;" selected>KOR</option>
+                    <option value="eng" style="color:#282828;">ENG</option>
+                </select>
+                <div class="btn-allmenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </header>
     <div id="container">
-        
+        <div class="row1">
+            <div class="allmenu-wrap">
+                <ul class="allmenu">
+                    <li>
+                        <a href="#">기업소개</a>
+                        <ul>
+                            <li><a href="#">그룹소개</a></li>
+                            <li><a href="#">CEO인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">CI</a></li>
+                            <li><a href="#">고객만족</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">GWP</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사업소개</a>
+                        <ul>
+                            <li><a href="#">도시가스사업</a></li>
+                            <li><a href="#">발전 및 집단에너지사업</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">R&amp;D</a>
+                        <ul>
+                            <li><a href="#">기술연구소 소개</a></li>
+                            <li><a href="#">연구 현황</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">투자정보</a>
+                        <ul>
+                            <li><a href="#">지배구조</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">공시/공고</a></li>
+                            <li><a href="#">IR자료실</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보센터</a>
+                        <ul>
+                            <li><a href="#">뉴스센터</a></li>
+                            <li><a href="#">홍보영상</a></li>
+                            <li><a href="#">사보</a></li>
+                            <li><a href="#">Annual Report</a></li>
+                            <li><a href="#">PR Library</a></li>
+                            <li><a href="#">사이버역사관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">안내</a></li>
+                            <li><a href="#">조회&#47;납부</a></li>
+                            <li><a href="#">신청</a></li>
+                            <li><a href="#">문의</a></li>
+                            <li><a href="#">전기&#40;광명 역세권&#41;</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-slide-wrap">
+                <div class="main-slide-side">
+                    <h1>
+                        <div class="logo">
+                            <a href="index.html"><img src="./images/common/logo2.jpg" alt="삼천리"></a>
+                        </div>
+                    </h1>
+                    <div>
+                        <span></span>
+                        <span>에너지에서 환경까지 미래를 창조하는 삼천리</span>
+                    </div>
+                </div>
+                <div class="mainslide">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/main/main-slide1.jpg" alt="신뢰와 나눔속에 사랑받는 기업으로">
+                                <p>신뢰와 나눔속에<br>사랑받는 기업으로</p>
+                                <p><a href="#">DETAIL VIEW &#43;</a></p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main/main-slide2.jpg" alt="신뢰와 나눔속에 사랑받는 기업으로">
+                                <p>신뢰와 나눔속에<br>사랑받는 기업으로</p>
+                                <p><a href="#">DETAIL VIEW &#43;</a></p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main/main-slide3.png" alt="신뢰와 나눔속에 사랑받는 기업으로">
+                                <p>신뢰와 나눔속에<br>사랑받는 기업으로</p>
+                                <p><a href="#">DETAIL VIEW &#43;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <h2>
+                요금 납부&#47;조회
+            </h2>
+            <div class="row2-1">
+                <ul>
+                    <li><a href="#"><img src="./main/row2-icon1-off.png" alt="요금조회">요금조회</a></li>
+                    <li><a href="#"><img src="./main/row2-icon2-off.png" alt="요금납부">요금납부</a></li>
+                    <li><a href="#"><img src="./main/row2-icon3-off.png" alt="전출입신청">전출입신청</a></li>
+                    <li><a href="#"><img src="./main/row2-icon4-off.png" alt="신청서양식">신청서양식</a></li>
+                </ul>
+            </div>
+            <div class="row2-2">
+                <div class="row2-2-1">
+                    <h3>간편 요금 조회</h3>
+                    <form action="post">
+                        <input type="text" name="askNum" id="askNum" placeholder="(전자)납부자 번호">
+                        <select name="askYear" id="askYear">
+                            <option value="2020" selected>2020년</option>
+                            <option value="2019">2019년</option>
+                            <option value="2018">2018년</option>
+                            <option value="2017">2017년</option>
+                            <option value="2016">2016년</option>
+                            <option value="2015">2015년</option>
+                        </select>
+                        <select name="askMonth" id="askMonth">
+                            <option value="12" selected>12월</option>
+                            <option value="11">11월</option>
+                            <option value="10">10월</option>
+                            <option value="9">9월</option>
+                            <option value="8">8월</option>
+                            <option value="7">7월</option>
+                            <option value="6">6월</option>
+                            <option value="5">5월</option>
+                            <option value="4">4월</option>
+                            <option value="3">3월</option>
+                            <option value="2">2월</option>
+                            <option value="1">1월</option>
+                        </select>
+                    </form>
+                    <input type="submit" value="조회">
+                    <a href="#">협력업체</a>
+                </div>
+                <div class="row2-2-2">
+                    <h3>지역별 고객센터 검색</h3>
+                    <form action="post">
+                        <select name="askSi" id="askSi">
+                            <option value="" selected>선택</option>
+                            <option value="seoul" selected>서울시</option>
+                            <option value="goyang" selected>고양시</option>
+                            <option value="gimpo" selected>김포시</option>
+                            <option value="paju" selected>파주시</option>
+                        </select>
+                        <select name="askGu" id="aksGu">
+                            <option value="" selected>선택</option>
+                        </select>
+                        <select name="askDong" id="askDong">
+                            <option value="" selected>선택</option>
+                        </select>
+                    </form>
+                    <input type="submit" value="조회">
+                </div>
+            </div>
+        </div>
+        <div class="row3">
+            <h2>뉴스센터&amp;공지사항</h2>
+            <h3>Newsroom</h3>
+            <div>
+                <input type="radio" name="row3Radio" id="newsroom">
+                <label for="newsroom">radio</label>
+                <div class="newsroom-subslide">
+                    <div>
+                        <p>2020.11<em>16</em></p>
+                        <p>온라인 비대면<br>‘2020 혁신 한마당’ 개최</p>
+                        <a href="#"><img src="./main/icon_NoticeitemArr.png" alt="자세히 보기"></a>
+                    </div>
+                    <div>
+                        <p>2020.11<em>16</em></p>
+                        <p>온라인 비대면<br>‘2020 혁신 한마당’ 개최</p>
+                        <a href="#"><img src="./main/icon_NoticeitemArr.png" alt="자세히 보기"></a>
+                    </div>
+                    <div>
+                        <p>2020.11<em>16</em></p>
+                        <p>온라인 비대면<br>‘2020 혁신 한마당’ 개최</p>
+                        <a href="#"><img src="./main/icon_NoticeitemArr.png" alt="자세히 보기"></a>
+                    </div>
+                    <div>
+                        <p>2020.11<em>16</em></p>
+                        <p>온라인 비대면<br>‘2020 혁신 한마당’ 개최</p>
+                        <a href="#"><img src="./main/icon_NoticeitemArr.png" alt="자세히 보기"></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="radio" name="row3Radio" id="notice">
+                <label for="notice">notice</label>
+                <div class="notice-subslide">
+                    <div>
+                        <p>2020.11<em>16</em></p>
+                        <p>온라인 비대면<br>‘2020 혁신 한마당’ 개최</p>
+                        <a href="#"><img src="./main/icon_NoticeitemArr.png" alt="자세히 보기"></a>
+                    </div>
+                    <div>
+                        <p>2020.11<em>16</em></p>
+                        <p>온라인 비대면<br>‘2020 혁신 한마당’ 개최</p>
+                        <a href="#"><img src="./main/icon_NoticeitemArr.png" alt="자세히 보기"></a>
+                    </div>
+                    <div>
+                        <p>2020.11<em>16</em></p>
+                        <p>온라인 비대면<br>‘2020 혁신 한마당’ 개최</p>
+                        <a href="#"><img src="./main/icon_NoticeitemArr.png" alt="자세히 보기"></a>
+                    </div>
+                    <div>
+                        <p>2020.11<em>16</em></p>
+                        <p>온라인 비대면<br>‘2020 혁신 한마당’ 개최</p>
+                        <a href="#"><img src="./main/icon_NoticeitemArr.png" alt="자세히 보기"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="row4-title">
+                <p>사회공헌 3대 원칙</p>
+                <h2>Social Value</h2>
+                <p>삼천리의 따뜻한 나눔 경영 활동을 소개합니다</p>
+            </div>
+            <div class="row4-info">
+                <ul>
+                    <li>이해관계자 만족<img src="./main/row4-icon1.png" alt=""><a href="#">DETAIL VIEW &#43;</a></li>
+                    <li>선택과 집중<img src="./main/row4-icon2.png" alt=""><a href="#">DETAIL VIEW &#43;</a></li>
+                    <li>지속의 원칙<img src="./main/row4-icon3.png" alt=""><a href="#">DETAIL VIEW &#43;</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row5">
+            <div class="row5-1">
+                <h2>인재채용</h2>
+                <h3>Career</h3>
+                <p>사랑을 품은 열정인을 기다립니다.</p>
+                <a href="#">DETAIL VIEW &#43;</a>
+            </div>
+            <div class="row5-2">
+                <img src="./main/row5-img.jpg" alt="인재채용">
+            </div>
+        </div>
     </div>
     <footer id="footer">
-        
+        <div class="footer-sec1">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span>고객의 소리</span>
+                        <span>고객님의 궁금한 점을 남겨주세요.</span>
+                        <img src="./main/footer-icon1.png" alt="고객의 소리">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>이용안내</span>
+                        <span>도시가스관련 안내사항입니다.</span>
+                        <img src="./main/footer-icon2.png" alt="이용안내">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>연결비용 안내</span>
+                        <span>가스렌지 연결 비용안내입니다.</span>
+                        <img src="./main/footer-icon3.png" alt="연결비용 안내">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>고객센터</span>
+                        <span>1544-3002</span>
+                        <img src="./main/footer-icon4.png" alt="고객센터">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>가스사고 신고접수</span>
+                        <span>가스신고를 접수하실수 있습니다.</span>
+                        <img src="./main/footer-icon5.png" alt="가스사고 신고접수">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-sec2">
+            <div class="footer-sec2-top">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="./common/footer-logo.gif" alt="삼천리"></a>
+                </div>
+                <ul>
+                    <li><a href="#">개인정보 처리 방침</a></li>
+                    <li><a href="#">메일주소 무단수집거부</a></li>
+                    <li><a href="#">신용정보 조회사실 통보공시</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <section class="familySite">
+                    <option value="Family Site" selected>Family Site</option>
+                    <option value="&#40;주&#41;삼탄">&#40;주&#41;삼탄</option>
+                    <option value="&#40;주&#41;삼천리ENG">&#40;주&#41;삼천리 ENG</option>
+                    <option value="&#40;주&#41;HUCES">&#40;주&#41;HUCES</option>
+                    <option value="&#40;주&#41;SL&amp;C&#40;Chai797&#41;">&#40;주&#41;SL&amp;C&#40;Chai797&#41;</option>
+                    <option value="&#40;주&#41;삼천리모터스">&#40;주&#41;삼천리모터스</option>
+                    <option value="천만장학회">천만장학회</option>
+                </section>
+                <input type="button" value="확인">
+            </div>
+            <div class="footer-sec2-bottom">
+                <p>07328 서울특별시 영등포구 국제금융로 6길 42 &#40;주&#41;삼천리<br>Copyright samchully Corp. All rights reserved.</p>
+                <img src="./common/zon.jpg" alt="한국에서 가장 존경받는 기업">
+                <img src="./common/img_logo_1.gif" alt="소비자중심경영 인증기업">
+                <img src="./common/edu2.png" alt="교육기부 진로체험 인증기관">
+            </div>
+        </div>
     </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // 슬라이드를 버튼으로 움직일 수 있습니다.
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 현재 페이지를 나타내는 점이 생깁니다. 클릭하면 이동합니다.
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+
+            // 현재 페이지를 나타내는 스크롤이 생깁니다. 클릭하면 이동합니다.
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+
+            // 3초마다 자동으로 슬라이드가 넘어갑니다. 1초 = 1000
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
 </body>
+
 </html>

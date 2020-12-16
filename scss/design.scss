@@ -1,0 +1,20 @@
+@charset 'utf-8';
+$mainColor-1: #1C356F;
+$mainColor-2: #ff7761;
+$mainColor-3: #f4f4f4;
+$fontColor-1: #282828;
+$backgroundColor-1: #f6f6f6;
+
+@mixin els {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin lineClamp($h, $num) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $num;
+    height: $h;
+    overflow: hidden;
+}
