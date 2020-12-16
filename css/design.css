@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=design.css.map */
+@-webkit-keyframes scroll {
+  0% {
+    right: -60px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes scroll {
+  0% {
+    right: -60px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+/*# sourceMappingURL=design.css.map */

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script src="./js/jquery-2.0.3.min.js"></script>
+    <script src="./js/main.js"></script>
     <title>삼천리|HOME</title>
 </head>
 
@@ -81,14 +82,15 @@
                             <li><a href="#">조회&#47;납부</a></li>
                             <li><a href="#">신청</a></li>
                             <li><a href="#">문의</a></li>
-                            <li><a href="#">전기&#40;광명 역세권&#41;</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">KOR</a>
+                        <ul>
+                            <li><a href="#">ENG</a></li>
                         </ul>
                     </li>
                 </ul>
-                <select name="lang" id="lang">
-                    <option value="kor" style="color:#282828;" selected>KOR</option>
-                    <option value="eng" style="color:#282828;">ENG</option>
-                </select>
                 <div class="btn-allmenu">
                     <span></span>
                     <span></span>
@@ -158,7 +160,6 @@
                             <li><a href="#">조회&#47;납부</a></li>
                             <li><a href="#">신청</a></li>
                             <li><a href="#">문의</a></li>
-                            <li><a href="#">전기&#40;광명 역세권&#41;</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -167,7 +168,7 @@
                 <div class="main-slide-side">
                     <h1>
                         <div class="logo">
-                            <a href="index.html"><img src="./images/common/logo2.jpg" alt="삼천리"></a>
+                            <a href="index.html"><img src="./images/common/logo2.png" alt="삼천리"></a>
                         </div>
                     </h1>
                     <div>
@@ -179,31 +180,34 @@
                     <div class="swiper-container gallery-top">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./images/main/main-slide1.jpg" alt="신뢰와 나눔속에 사랑받는 기업으로">
+                                <img src="./images/main/main-slide1.png" alt="신뢰와 나눔속에 사랑받는 기업으로">
                                 <p>신뢰와 나눔속에<br>사랑받는 기업으로</p>
                                 <p><a href="#">DETAIL VIEW &#43;</a></p>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/main/main-slide2.jpg" alt="신뢰와 나눔속에 사랑받는 기업으로">
-                                <p>신뢰와 나눔속에<br>사랑받는 기업으로</p>
+                                <img src="./images/main/main-slide2.png" alt="신뢰와 나눔속에 사랑받는 기업으로">
+                                <p>지속 성장을 향해<br>달려 가는 삼천리그룹</p>
                                 <p><a href="#">DETAIL VIEW &#43;</a></p>
                             </div>
                             <div class="swiper-slide">
                                 <img src="./images/main/main-slide3.png" alt="신뢰와 나눔속에 사랑받는 기업으로">
-                                <p>신뢰와 나눔속에<br>사랑받는 기업으로</p>
+                                <p>에너지에서 환경까지<br>미래를 창조하는 삼천리</p>
                                 <p><a href="#">DETAIL VIEW &#43;</a></p>
                             </div>
                         </div>
                         <div class="swiper-button-next swiper-button-white"></div>
                         <div class="swiper-button-prev swiper-button-white"></div>
-                        <div class="swiper-container gallery-thumbs">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide" style="background-image:url(./images/main/main-slide1.jpg)">
-                                </div>
-                                <div class="swiper-slide" style="background-image:url(./images/main/main-slide2.jpg)">
-                                </div>
-                                <div class="swiper-slide" style="background-image:url(./images/main/main-slide3.png)">
-                                </div>
+                    </div>
+                    <div class="swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(./images/main/main-slide1.png)">
+                                <span></span>
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(./images/main/main-slide2.png)">
+                                <span></span>
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(./images/main/main-slide3.png)">
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -430,18 +434,24 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <script>
         var galleryThumbs = new Swiper('.gallery-thumbs', {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 3,
             freeMode: true,
-            loopedSlides: 5, //looped slides should be the same
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
         });
         var galleryTop = new Swiper('.gallery-top', {
-            spaceBetween: 10,
+            effect:'fade',
+            autoHeight: false,
+            fadeEffect: {
+                crossFade: true
+            },
             loop: true,
             loopedSlides: 5, //looped slides should be the same
+            speed: 1500,
+            autoplay: {
+                delay: 5000,
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
