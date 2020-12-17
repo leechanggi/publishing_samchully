@@ -1,7 +1,8 @@
 @charset 'utf-8';
 $mainColor-1: #0074ad;
-$mainColor-2: #ff7761;
-$mainColor-3: #f4f4f4;
+$mainColor-2: #d82b64;
+$mainColor-3: #7fb278;
+$mainColor-4: #f4f4f4;
 $subColor-1: #9a9a9a;
 $fontColor-1: #282828;
 
@@ -20,11 +21,123 @@ $fontColor-1: #282828;
 }
 
 @keyframes scroll {
-    0%{
+    0% {
         right: -60px;
     }
 
-    100%{
+    100% {
         right: 100%;
+    }
+}
+
+@-webkit-keyframes allmenuSpan1off {
+    0% {
+        -webkit-transform: translateY(10px) rotate(45deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(10px) rotate(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes allmenuSpan1off {
+    0% {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(10px) rotate(0);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@-webkit-keyframes allmenuSpan2off {
+    0% {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px) rotate(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes allmenuSpan2off {
+    0% {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(0);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@-webkit-keyframes allmenuSpan1on {
+    0% {
+        -webkit-transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(10px) rotate(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(10px) rotate(45deg);
+    }
+}
+
+@keyframes allmenuSpan1on {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(10px) rotate(0);
+    }
+
+    100% {
+        transform: translateY(10px) rotate(45deg);
+    }
+}
+
+@-webkit-keyframes allmenuSpan2on {
+    0% {
+        -webkit-transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px) rotate(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+@keyframes allmenuSpan2on {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(0);
+    }
+
+    100% {
+        transform: translateY(-10px) rotate(-45deg);
     }
 }

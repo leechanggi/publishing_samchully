@@ -91,6 +91,8 @@
                         </ul>
                     </li>
                 </ul>
+                <!-- <div class="btn-allmenu on"> -->
+                <!-- <div class="btn-allmenu off"> -->
                 <div class="btn-allmenu">
                     <span></span>
                     <span></span>
@@ -101,6 +103,7 @@
     </header>
     <div id="container">
         <div class="row1">
+            <!-- <div class="allmenu-wrap on"> -->
             <div class="allmenu-wrap">
                 <ul class="allmenu">
                     <li>
@@ -179,24 +182,25 @@
                 <div class="mainslide">
                     <div class="swiper-container gallery-top">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./images/main/main-slide1.png" alt="신뢰와 나눔속에 사랑받는 기업으로">
+                            <div class="swiper-slide 1st" style="background-image: url(./images/main/main-slide1.png);">
                                 <p>신뢰와 나눔속에<br>사랑받는 기업으로</p>
                                 <p><a href="#">DETAIL VIEW &#43;</a></p>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./images/main/main-slide2.png" alt="신뢰와 나눔속에 사랑받는 기업으로">
+                            <div class="swiper-slide 2nd" style="background-image: url(./images/main/main-slide2.png);">
                                 <p>지속 성장을 향해<br>달려 가는 삼천리그룹</p>
                                 <p><a href="#">DETAIL VIEW &#43;</a></p>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./images/main/main-slide3.png" alt="신뢰와 나눔속에 사랑받는 기업으로">
+                            <div class="swiper-slide 3rd" style="background-image: url(./images/main/main-slide3.png);">
                                 <p>에너지에서 환경까지<br>미래를 창조하는 삼천리</p>
                                 <p><a href="#">DETAIL VIEW &#43;</a></p>
                             </div>
                         </div>
-                        <div class="swiper-button-next swiper-button-white"></div>
-                        <div class="swiper-button-prev swiper-button-white"></div>
+                        <div class="mainslide-pager">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <span class="slide-bar"></span>
+                        </div>
                     </div>
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
@@ -220,61 +224,75 @@
             </h2>
             <div class="row2-1">
                 <ul>
-                    <li><a href="#"><img src="./main/row2-icon1-off.png" alt="요금조회">요금조회</a></li>
-                    <li><a href="#"><img src="./main/row2-icon2-off.png" alt="요금납부">요금납부</a></li>
-                    <li><a href="#"><img src="./main/row2-icon3-off.png" alt="전출입신청">전출입신청</a></li>
-                    <li><a href="#"><img src="./main/row2-icon4-off.png" alt="신청서양식">신청서양식</a></li>
+                    <li><a href="#">요금조회</a></li>
+                    <li><a href="#">요금납부</a></li>
+                    <li><a href="#">전출입신청</a></li>
+                    <li><a href="#">신청서양식</a></li>
                 </ul>
             </div>
             <div class="row2-2">
-                <div class="row2-2-1">
-                    <h3>간편 요금 조회</h3>
-                    <form action="post">
-                        <input type="text" name="askNum" id="askNum" placeholder="(전자)납부자 번호">
-                        <select name="askYear" id="askYear">
-                            <option value="2020" selected>2020년</option>
-                            <option value="2019">2019년</option>
-                            <option value="2018">2018년</option>
-                            <option value="2017">2017년</option>
-                            <option value="2016">2016년</option>
-                            <option value="2015">2015년</option>
-                        </select>
-                        <select name="askMonth" id="askMonth">
-                            <option value="12" selected>12월</option>
-                            <option value="11">11월</option>
-                            <option value="10">10월</option>
-                            <option value="9">9월</option>
-                            <option value="8">8월</option>
-                            <option value="7">7월</option>
-                            <option value="6">6월</option>
-                            <option value="5">5월</option>
-                            <option value="4">4월</option>
-                            <option value="3">3월</option>
-                            <option value="2">2월</option>
-                            <option value="1">1월</option>
-                        </select>
-                    </form>
-                    <input type="submit" value="조회">
-                    <a href="#">협력업체</a>
-                </div>
-                <div class="row2-2-2">
-                    <h3>지역별 고객센터 검색</h3>
-                    <form action="post">
-                        <select name="askSi" id="askSi">
-                            <option value="" selected>선택</option>
-                            <option value="seoul" selected>서울시</option>
-                            <option value="goyang" selected>고양시</option>
-                            <option value="gimpo" selected>김포시</option>
-                            <option value="paju" selected>파주시</option>
-                        </select>
-                        <select name="askGu" id="aksGu">
-                            <option value="" selected>선택</option>
-                        </select>
-                        <select name="askDong" id="askDong">
-                            <option value="" selected>선택</option>
-                        </select>
-                    </form>
-                    <input type="submit" value="조회">
+                <div class="row2-2-wrap">
+                    <div class="row2-2-1">
+                        <form action="post">
+                            <h3>간편 요금 조회</h3>
+                            <p>&#40;전자&#41;납부자 번호</p>
+                            <input type="text" name="askNum" id="askNum" placeholder="123456789(최소9글자 이상)">
+                            <p>청구연도 선택</p>
+                            <select name="askYear" id="askYear">
+                                <option value="2020" selected>2020년</option>
+                                <option value="2019">2019년</option>
+                                <option value="2018">2018년</option>
+                                <option value="2017">2017년</option>
+                                <option value="2016">2016년</option>
+                                <option value="2015">2015년</option>
+                            </select>
+                            <p>청구월 선택</p>
+                            <select name="askMonth" id="askMonth">
+                                <option value="1">1월</option>
+                                <option value="2">2월</option>
+                                <option value="3">3월</option>
+                                <option value="4">4월</option>
+                                <option value="5">5월</option>
+                                <option value="6">6월</option>
+                                <option value="7">7월</option>
+                                <option value="8">8월</option>
+                                <option value="9">9월</option>
+                                <option value="10">10월</option>
+                                <option value="11">11월</option>
+                                <option value="12" selected>12월</option>
+                            </select>
+                        </form>
+                        <div>
+                            <input type="submit" value="조회">
+                            <span></span>
+                            <a href="#">협력업체</a>
+                        </div>
+                    </div>
+                    <div class="row2-2-2">
+                        <h3>지역별 고객센터 검색</h3>
+                        <form action="post">
+                            <p>관할 시 선택</p>
+                            <select name="askSi" id="askSi">
+                                <option value="" selected>선택</option>
+                                <option value="seoul">서울시</option>
+                                <option value="goyang">고양시</option>
+                                <option value="gimpo">김포시</option>
+                                <option value="paju">파주시</option>
+                            </select>
+                            <p>관할 구 선택</p>
+                            <select name="askGu" id="aksGu">
+                                <option value="" selected>선택</option>
+                            </select>
+                            <p>관할 동 선택</p>
+                            <select name="askDong" id="askDong">
+                                <option value="" selected>선택</option>
+                            </select>
+                        </form>
+                        <div>
+                            <input type="submit" value="조회">
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -441,14 +459,14 @@
             watchSlidesProgress: true,
         });
         var galleryTop = new Swiper('.gallery-top', {
-            effect:'fade',
+            effect: 'fade',
             autoHeight: false,
             fadeEffect: {
                 crossFade: true
             },
             loop: true,
             loopedSlides: 5, //looped slides should be the same
-            speed: 1500,
+            speed: 1300,
             autoplay: {
                 delay: 5000,
             },
@@ -456,9 +474,25 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+                renderFraction: function (currentClass, totalClass) {
+                    return '<span class="' + currentClass + '"></span>' + '<span class="' + totalClass +
+                        '"></span>';
+                },
+            },
             thumbs: {
                 swiper: galleryThumbs,
             },
+            on: {
+                transitionEnd: function (swiper) {
+                    $('.slide-bar').addClass('on');
+                },
+                slideChange: function () {
+                    $('.slide-bar').removeClass('on');
+                }
+            }
         });
     </script>
 </body>
