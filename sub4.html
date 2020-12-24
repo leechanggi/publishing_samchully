@@ -195,16 +195,13 @@
             <h3>회원가입</h3>
             <p>삼천리 사이트에 오신 것을 환영합니다.</p>
             <div class="join-box-wrap">
-                <div class="agree-box">
-
-                </div>
                 <div class="join-box">
                     <h4>회원가입정보</h4>
                     <table>
                         <caption>삼천리 홈페이지 회원가입</caption>
                         <colgroup>
-                            <col width="10%">
-                            <col width="90%">
+                            <col width="25%">
+                            <col width="75%">
                         </colgroup>
                         <tbody>
                             <tr class="tr01">
@@ -229,8 +226,8 @@
                                     <span>
                                         <input type="text" name="userID" id="userID" placeholder="아이디를 입력해 주세요."
                                             required='required'>
-                                        <span>&#42;5~12자 이내 영문과 숫자 조합(대소문자 구별)</span>
                                         <a href="#">아이디 중복 확인</a>
+                                        <span>&#42;5~12자 이내 영문과 숫자 조합</span>
                                     </span>
                                 </td>
                             </tr>
@@ -241,9 +238,9 @@
                                 </th>
                                 <td>
                                     <span>
-                                        <input type="password" name="userPw" id="userPw" placeholder="비밀번호를 입력해 주세요"
+                                        <input type="password" name="userPw" id="userPw" placeholder="비밀번호를 입력해 주세요."
                                             required='required'>
-                                        <span>&#42;8~15자 이내 영문과 숫자, 특수문자 조합(대소문자 구별)</span>
+                                        <span>&#42;8~15자 이내 영문과 숫자, 특수문자 조합</span>
                                     </span>
                                 </td>
                             </tr>
@@ -251,7 +248,7 @@
                                 <th scope="row">
                                     <em class="icon-required">필수항목</em>
                                     <label for="re_userPW">
-                                    비밀번호 확인
+                                        비밀번호 확인
                                     </label>
                                 </th>
                                 <td>
@@ -270,13 +267,13 @@
                                     <label for="userPhone">전화번호(휴대폰)</label>
                                 </th>
                                 <td>
-                                    <span>
+                                    <span class="tr06-01">
                                         <input type="tel" name="userPhone" id="userPhone"
                                             placeholder="휴대폰 번호를 '-'없이 입력해 주세요." required='required'>
                                         <a href="#">인증하기</a>
                                         <span>&#42;'-'없이 입력해 주세요.</span>
                                     </span>
-                                    <span>
+                                    <span class="tr06-02">
                                         <input type="text" name="checkNum" id="checkNum" placeholder="인증번호를 입력해 주세요."
                                             required='required'>
                                         <a href="#">확인</a>
@@ -289,7 +286,8 @@
                                 </th>
                                 <td>
                                     <span>
-                                        <input type="tel" name="userHometel" id="userHometel" placeholder="전화번호(집전화)를 입력해 주세요">
+                                        <input type="tel" name="userHometel" id="userHometel"
+                                            placeholder="전화번호(집전화)를 입력해 주세요.">
                                         <span>&#42;'-'없이 입력해 주세요.</span>
                                     </span>
                                 </td>
@@ -308,16 +306,21 @@
                                 </th>
                                 <td>
                                     <span>
-                                        <input type="text" name="addrNum" id="addrNum" title="우편번호" readonly="" placeholder="우편번호(필수)"
-                                            disabled required='required'>
+                                        <input type="text" name="addrNum" id="addrNum" title="우편번호" readonly=""
+                                            placeholder="우편번호(필수)" disabled required='required'>
                                         <input type="button" value="우편번호 찾기" class="addrPop" id="addrPop">
                                     </span>
-                                    <input type="text" name="address1" id="address1" title="주소" readonly="" placeholder="기본주소" disabled required='required'>
-                                    <input type="text" name="address2" id="address2" title="상세주소" placeholder="상세주소를 입력해 주세요." required='required'>
+                                    <input type="text" name="address1" id="address1" title="주소" readonly=""
+                                        placeholder="기본주소" disabled required='required' class="address1">
+                                    <input type="text" name="address2" id="address2" title="상세주소"
+                                        placeholder="상세주소를 입력해 주세요." required='required' class="address2">
                                 </td>
                             </tr>
                             <tr class="tr10">
-                                <th>만 14세 이상</th>
+                                <th>
+                                    <em class="icon-required">필수항목</em>
+                                    만 14세 이상
+                                </th>
                                 <td>
                                     <input type="radio" name="radioAge" id="radioAge01" checked required='required'>
                                     <label for="radioAge01">

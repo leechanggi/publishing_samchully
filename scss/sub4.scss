@@ -519,7 +519,7 @@ body {
         }
         .join-box-wrap{
             width: 900px;
-            height: 582px;
+            height: 2000px;
             margin: 40px auto 0;
             border-top: 4px solid $mainColor-3;
             padding-bottom: 140px;
@@ -528,6 +528,157 @@ body {
                 height: 100%;
                 padding: 40px;
                 background-color: #fff;
+                >h4{
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                //table-common str.
+                table{
+                    tbody{
+                        border-top: 1px solid $mainColor-3;
+                        tr{
+                            height: 75px;
+                            th{
+                                text-align-last: left;
+                                font-weight: normal;
+                                font-size: 18px;
+                                position: relative;
+                                padding-left: 30px;
+                                border-bottom: 1px solid $fontColor-1;
+                                .icon-required{
+                                    display: block;
+                                    width: 0px;
+                                    height: 0px;
+                                    text-indent: -9999px;
+                                    &::after{
+                                        position: absolute;
+                                        content: '';
+                                        top: 50%;
+                                        left: 5px;
+                                        width: 15px;
+                                        height: 15px;
+                                        transform: translateY(-50%);
+                                        background: url(../images/sub4/checked.png) no-repeat 0 0;
+                                        background-size: cover;
+                                    }
+                                }
+                            }
+                            td{
+                                font-size: 18px;
+                                border-bottom: 1px solid #e5e5e5;
+                                color: #555;
+                                padding-left: 15px;
+                                input[type=text], input[type=password], input[type=email], input[type=tel]{
+                                    width: 300px;
+                                    height: 40px;
+                                    font-size: 16px;
+                                    background-color: #f0f0f0;
+                                    border: none;
+                                    text-indent: 15px;
+                                    margin: 3px 0;
+                                    & ~ span{
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //table-common end.
+                >table{
+                    >tbody{
+                        >.tr03{
+                            height: 100px;
+                            >td{
+                                >span{
+                                    >a{
+                                        display: inline-block;
+                                        width: 140px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        background-color: $mainColor-3;
+                                        color: #fff;
+                                        font-size: 16px;
+                                    }
+                                    >span{
+                                        display: block;
+                                        text-indent: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        >.tr05{
+                            >td{
+                                >.error{
+                                    display: none;
+                                    font-size: 16px;
+                                    color: $mainColor-2;
+                                }
+                            }
+                        }
+                        >.tr06{
+                            height: 125px;
+                            td{
+                                >.tr06-01{
+                                    display: block;
+                                    margin-bottom: 10px;
+                                    >a{
+                                        display: inline-block;
+                                        width: 100px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        background-color: $mainColor-3;
+                                        color: #fff;
+                                        font-size: 16px;
+                                    }
+                                }
+                                >.tr06-02{
+                                    display: block;
+                                    >a{
+                                        display: inline-block;
+                                        width: 80px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        background-color: $mainColor-3;
+                                        color: #fff;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                        >.tr09{
+                            height: 125px;
+                            >td{
+                                >span{
+                                    display: block;
+                                    margin-bottom: 10px;
+                                    input[type=button]{
+                                        display: inline-block;
+                                        width: 140px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        background-color: $mainColor-3;
+                                        color: #fff;
+                                        font-size: 16px;
+                                        border: none;
+                                        font: 16px/1.6 'Play', 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
+                                    }
+                                }
+                                >.address1{
+                                    width: 355px;
+                                }
+                                >.address2{
+                                    width: 240px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
