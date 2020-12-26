@@ -19,7 +19,7 @@ $fontColor-1: #282828;
     height: $h;
     overflow: hidden;
 }
-
+//row1 스크롤 효과
 @keyframes scroll {
     0% {
         right: -60px;
@@ -29,7 +29,7 @@ $fontColor-1: #282828;
         right: 100%;
     }
 }
-
+//햄버거 메뉴 효과
 @-webkit-keyframes allmenuSpan1off {
     0% {
         -webkit-transform: translateY(10px) rotate(45deg);
@@ -139,5 +139,150 @@ $fontColor-1: #282828;
 
     100% {
         transform: translateY(-10px) rotate(-45deg);
+    }
+}
+//유효하지 않은 값 입력시 에러 효과
+@keyframes error {
+    0% {
+        transform: translateX(-8px);
+    }
+
+    25% {
+        transform: translateX(8px);
+    }
+
+    50% {
+        transform: translateX(-8px);
+    }
+
+    75% {
+        transform: translateX(8px);
+    }
+}
+//스크롤 효과 정리
+@keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-top {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hideme {
+	opacity: 0;
+}
+.showme {
+	-webkit-animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+	&.top {
+		-webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+		animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	}
+	&.right {
+		-webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+		animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	}
+	&.bottom {
+		-webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+		animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	}
+	&.left {
+		-webkit-animation: fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+		animation: fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	}
+}
+
+// class="btnDetailView" 효과
+.btnDetailView{
+    position: relative;
+    padding: 10px 10px;
+    margin: 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+    &:hover{
+        color: #fff;
+        >span{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    >span{
+        position: absolute;
+        display: block;
+        width: 0px;
+        height: 0px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: $mainColor-1;
+        transition: width 0.5s, height 0.5s;
+        z-index: -1;
     }
 }

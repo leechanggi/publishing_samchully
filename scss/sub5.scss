@@ -505,7 +505,6 @@ body {
     }
     .row2{
         background: $mainColor-4;
-        padding-bottom: 100px;
         >h3{
             width: 100%;
             padding-top: 125px;
@@ -513,177 +512,328 @@ body {
             font-weight: bold;
             text-align: center;
         }
-        >p{
+        p{
             width: 100%;
             font-size: 22px;
             text-align: center;
         }
-        .agreeArea-wrap{
+        .join-box-wrap{
             width: 900px;
-            height: 1372px;
-            margin: 40px auto;
-            padding: 40px;
+            height: 1245px;
+            margin: 40px auto 0;
             border-top: 4px solid $mainColor-3;
-            background: #fff;
-            // radioType common str.//
-            .agree-radio{
+            padding-bottom: 140px;
+            .join-box{
                 width: 100%;
-                text-align: right;
-                font-size: 18px;
-                margin: 10px 0;
-            }
-            input[type=radio]{
-                position: relative;
-                left: -9999px;
-                &:checked{
-                    & + label{
-                        >span{
-                            background: url(../images/sub3/radio-type-checked.png) no-repeat 50% 50%;
-                            background-size: cover;
-                        }
-                    }
-                }
-            }
-            label{
-                position: relative;
-                font-size: 18px;
-                >span{
-                    position: absolute;
-                    top: 50%;
-                    left: -18px;
-                    width: 15px;
-                    height: 15px;
-                    transform: translateY(-50%);
-                    background: url(../images/sub3/radio-type.png) no-repeat 50% 50%;
-                    background-size: cover;
-                }
-            }
-            // tadioType common end. //
-            .agree1{
+                height: 100%;
+                padding: 40px;
+                background-color: #fff;
                 >h4{
                     font-size: 22px;
                     font-weight: bold;
                     margin-bottom: 10px;
                 }
-                >.agree1-txt{
-                    width: 100%;
-                    height: 190px;
-                    overflow-y: auto;
-                    overflow-x: hidden;
-                    background-color: #f0f0f0;
-                    padding: 20px;
-                }
-                
-            }
-            .agree2{
-                >h4{
-                    font-size: 22px;
-                    font-weight: bold;
-                    margin: 40px 0 10px;
-                }
-                >.agree2-1{
-                    >.agree2-1-txt{
-                        width: 100%;
-                        height: 190px;
-                        overflow-y: auto;
-                        overflow-x: hidden;
-                        background-color: #f0f0f0;
-                        padding: 20px;
-                    }
-                }
-                >.agree2-2{
-                    >.agree2-2-txt{
-                        width: 100%;
-                        height: 140px;
-                        overflow-y: auto;
-                        overflow-x: hidden;
-                        background-color: #f0f0f0;
-                        padding: 20px;
-                        margin-top: 40px;
-                    }
-                }
-                >.agree2-3{
-                    >.agree2-3-txt{
-                        width: 100%;
-                        height: 170px;
-                        overflow-y: auto;
-                        overflow-x: hidden;
-                        background-color: #f0f0f0;
-                        padding: 20px;
-                        margin-top: 40px;
-                    }
-                }
-            }
-            .agreeAll{
-                position: relative;
-                width: 100%;
-                height: 20px;
-                margin: 40px 0 20px;
-                >input[type=checkbox]{
-                    position: relative;
-                    left: -9999px;
-                    &:checked{
-                        + label{
-                            span{
-                                background: url(../images/sub3/bg_checkbox_checked.png) no-repeat 0 0;
+                //table-common str.
+                table{
+                    tbody{
+                        border-top: 1px solid $mainColor-3;
+                        tr{
+                            height: 75px;
+                            th{
+                                text-align-last: left;
+                                font-weight: normal;
+                                font-size: 18px;
+                                position: relative;
+                                padding-left: 30px;
+                                border-bottom: 1px solid $fontColor-1;
+                                &.error{
+                                    >.icon-required{
+                                        &::after{
+                                            background: url(../images/sub5/checked-errer.png) no-repeat 0 0;
+                                            background-size: cover;
+                                            transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                                            -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                                        }
+                                    }
+                                }
+                                .icon-required{
+                                    display: block;
+                                    width: 0px;
+                                    height: 0px;
+                                    text-indent: -9999px;
+                                    &::after{
+                                        position: absolute;
+                                        content: '';
+                                        top: 50%;
+                                        left: 5px;
+                                        width: 15px;
+                                        height: 15px;
+                                        transform: translateY(-50%);
+                                        background: url(../images/sub5/checked.png) no-repeat 0 0;
+                                        background-size: cover;
+                                    }
+                                }
+                            }
+                            td{
+                                font-size: 18px;
+                                border-bottom: 1px solid #e5e5e5;
+                                color: #555;
+                                padding-left: 15px;
+                                input[type=text], input[type=password], input[type=email], input[type=tel]{
+                                    width: 300px;
+                                    height: 40px;
+                                    font-size: 16px;
+                                    background-color: #f0f0f0;
+                                    border: none;
+                                    text-indent: 15px;
+                                    margin: 3px 0;
+                                    font: 16px/1.6 'Play', 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
+                                    color: $fontColor-1;
+                                    & ~ span{
+                                        font-size: 16px;
+                                    }
+                                }
                             }
                         }
                     }
                 }
-                >label{
-                    display: inline-block;
-                    position: relative;
-                    top: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 220px;
-                    height: 20px;
-                    line-height: 20px;
-                    cursor: pointer;
-                    >span{
-                        position: absolute;
-                        top: 10px;
-                        left: -25px;
-                        width: 20px;
-                        height: 20px;
-                        background: url(../images/sub3/bg_checkbox_default.png) no-repeat 0 0;
-                        background-size: cover;
+                //table-common end.
+                >table{
+                    >tbody{
+                        >.tr03{
+                            height: 100px;
+                            >td{
+                                >span{
+                                    >a{
+                                        display: inline-block;
+                                        width: 140px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        background-color: $mainColor-3;
+                                        color: #fff;
+                                        font-size: 16px;
+                                        border-radius: 4px;
+                                    }
+                                    >span{
+                                        display: block;
+                                        text-indent: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        >.tr04{
+                            height: 100px;
+                            >td{
+                                >span{
+                                    >span{
+                                        display: block;
+                                        text-indent: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        >.tr05{
+                            >td{
+                                >.error{
+                                    display: none;
+                                    font-size: 16px;
+                                    color: $mainColor-2;
+                                }
+                            }
+                        }
+                        >.tr06{
+                            height: 125px;
+                            td{
+                                >.tr06-01{
+                                    display: block;
+                                    margin-bottom: 10px;
+                                    >a{
+                                        display: inline-block;
+                                        width: 100px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        background-color: $mainColor-3;
+                                        color: #fff;
+                                        font-size: 16px;
+                                        border-radius: 4px;
+                                    }
+                                }
+                                >.tr06-02{
+                                    display: block;
+                                    >a{
+                                        display: inline-block;
+                                        width: 80px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        background-color: $mainColor-3;
+                                        color: #fff;
+                                        font-size: 16px;
+                                        border-radius: 4px;
+                                    }
+                                }
+                            }
+                        }
+                        >.tr09{
+                            height: 125px;
+                            >td{
+                                >span{
+                                    display: block;
+                                    margin-bottom: 10px;
+                                    input[type=text]{
+                                        background-color: #d4d4d4;
+                                    }
+                                    input[type=button]{
+                                        display: inline-block;
+                                        width: 140px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        background-color: $mainColor-3;
+                                        color: #fff;
+                                        font-size: 16px;
+                                        border: none;
+                                        border-radius: 4px;
+                                        margin-left: 5px;
+                                        font: 16px/1.6 'Play', 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
+                                        cursor: pointer;
+                                    }
+                                }
+                                >.address1{
+                                    width: 355px;
+                                    background-color: #d4d4d4;
+                                }
+                                >.address2{
+                                    width: 240px;
+                                }
+                            }
+                        }
+                        >.tr10{
+                            td{
+                                >span{
+                                    &:nth-child(1){
+                                        .radioAge01-wrap{
+                                            >input[type=radio]{
+                                                position: relative;
+                                                left: -9999px;
+                                                &:checked{
+                                                    & ~ label{
+                                                        >span{
+                                                            &:nth-child(1){
+                                                                background: url(../images/sub5/radio-type-checked.png) no-repeat 50% 50%;
+                                                                background-size: cover;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            >label{
+                                                position: relative;
+                                                >span{
+                                                    display: inline-block;
+                                                    &:nth-child(1){
+                                                        position: absolute;
+                                                        content: '';
+                                                        top: 50%;
+                                                        left: -20px;
+                                                        width: 15px;
+                                                        height: 15px;
+                                                        transform: translateY(-50%);
+                                                        background: url(../images/sub5/radio-type.png) no-repeat 50% 50%;
+                                                        background-size: cover;
+                                                    }
+                                                    &:nth-child(2){
+                                                        position: relative;
+                                                        left: -20px;
+                                                        margin-left: 20px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .radioAge02-wrap{
+                                            >input[type=radio]{
+                                                position: relative;
+                                                left: -9999px;
+                                                &:checked{
+                                                    & ~ label{
+                                                        >span{
+                                                            &:nth-child(1){
+                                                                background: url(../images/sub5/radio-type-checked.png) no-repeat 50% 50%;
+                                                                background-size: cover;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            >label{
+                                                position: relative;
+                                                >span{
+                                                    display: inline-block;
+                                                    &:nth-child(1){
+                                                        position: absolute;
+                                                        content: '';
+                                                        top: 50%;
+                                                        left: -20px;
+                                                        width: 15px;
+                                                        height: 15px;
+                                                        transform: translateY(-50%);
+                                                        background: url(../images/sub5/radio-type.png) no-repeat 50% 50%;
+                                                        background-size: cover;
+                                                    }
+                                                    &:nth-child(2){
+                                                        position: relative;
+                                                        left: -20px;
+                                                        margin-left: 20px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:nth-child(2){
+                                        display: block;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-            }
-            .btnArea{
-                clear: both;
-                font-size: 22px;
-                color: #fff;
-                margin-top: 100px;
-                width: 100%;
-                height: 40px;
-                .cancel{
-                    float: left;
-                    width: 50%;
-                    >a{
-                        display: block;
-                        width: 160px;
-                        height: 40px;
-                        line-height: 40px;
-                        background-color: $fontColor-1;
-                        text-align: center;
-                        margin: 0 3% 0 calc(97% - 160px);
-                        border-radius: 4px;
+                .btnArea{
+                    clear: both;
+                    font-size: 22px;
+                    color: #fff;
+                    margin-top: 30px;
+                    width: 100%;
+                    height: 40px;
+                    .cancel{
+                        float: left;
+                        width: 50%;
+                        >a{
+                            display: block;
+                            width: 160px;
+                            height: 40px;
+                            line-height: 40px;
+                            background-color: $fontColor-1;
+                            text-align: center;
+                            margin: 0 3% 0 calc(97% - 160px);
+                            border-radius: 4px;
+                        }
                     }
-                }
-                .conform{
-                    float: left;
-                    width: 50%;
-                    >a{
-                        display: block;
-                        width: 160px;
-                        height: 40px;
-                        line-height: 40px;
-                        background-color: $mainColor-3;
-                        text-align: center;
-                        margin: 0 calc(97% - 160px) 0 3%;
-                        border-radius: 4px;
+                    .conform{
+                        float: left;
+                        width: 50%;
+                        >a{
+                            display: block;
+                            width: 160px;
+                            height: 40px;
+                            line-height: 40px;
+                            background-color: $mainColor-3;
+                            text-align: center;
+                            margin: 0 calc(97% - 160px) 0 3%;
+                            border-radius: 4px;
+                        }
                     }
                 }
             }

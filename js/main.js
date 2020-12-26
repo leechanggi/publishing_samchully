@@ -65,16 +65,32 @@ function fullpageFnc() {
         $(document).ready(function () {
             $('#container').fullpage({
                 //options
-                autoScrolling:true,
-                scrollHorizontally:true,
-                scrollBar:false,
+                autoScrolling: true,
+                scrollHorizontally: true,
+                scrollBar: false,
                 afterLoad: function (origin, destination, direction) {
-                if ($('.row1').hasClass('active')) {
-                    $('#header').removeClass('on')
-                } else {
-                    $('#header').addClass('on')
+                    if ($('.row1').hasClass('active')) {
+                        $('#header').removeClass('on')
+                    } else if($('.row2').hasClass('active')){
+                        $('#header').addClass('on');
+                        $(this).find('.hideme').addClass('showme');
+                        $(this).find('.hideme').removeClass('hideme');
+                    } else if($('.row3').hasClass('active')){
+                        $('#header').addClass('on')
+                        $(this).find('.hideme').addClass('showme');
+                        $(this).find('.hideme').removeClass('hideme');
+                    } else if($('.row4').hasClass('active')){
+                        $('#header').addClass('on')
+                        $(this).find('.hideme').addClass('showme');
+                        $(this).find('.hideme').removeClass('hideme');
+                    } else if($('.row5').hasClass('active')){
+                        $('#header').addClass('on')
+                        $(this).find('.hideme').addClass('showme');
+                        $(this).find('.hideme').removeClass('hideme');
+                    } else{
+                        $('#header').addClass('on')
+                    }
                 }
-            }
             })
         })
     }
