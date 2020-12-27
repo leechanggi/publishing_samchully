@@ -16,7 +16,7 @@ function agreeAllFnc() {
     });
     conform.click(function () {
         if (agreeY.attr('checked') == 'checked') {
-            window.location.replace('../sub4.html')
+            location.href = "http://lxyex1379.dothome.co.kr/samchully/sub4.html";
         } else {
             alert('회원가입약관 및 개인정보처리방침안내 약관에 동의하셔야 회원가입 하실 수 있습니다.');
         }

@@ -48,17 +48,21 @@ function swiperFnc() {
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            360: {
+            0:{
                 slidesPerView: 1,
-                spaceBetween: 20,
+                spaceBetween: 10,
+            },
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 10,
             },
             768: {
-                slidesPerView: 1,
-                spaceBetween: 20,
+                slidesPerView: 2,
+                spaceBetween: 10,
             },
             1200: {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 10,
             },
             1920: {
                 slidesPerView: 4,
@@ -73,15 +77,21 @@ function swiperFnc() {
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            360: {
-                slidesPerView: 2,
+            0:{
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 10,
             },
             768: {
                 slidesPerView: 2,
+                spaceBetween: 10,
             },
             1200: {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 10,
             },
             1920: {
                 slidesPerView: 4,

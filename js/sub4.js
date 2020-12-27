@@ -28,7 +28,7 @@ function user1Fnc() {
 function conformFnc() {
     $('.conform').click(function () {
         if ($('.userInfo input').hasClass('valid') && !$('.userInfo input').next().hasClass('error')) {
-            window.location.replace('../sub5.html')
+            location.href = "http://lxyex1379.dothome.co.kr/samchully/sub5.html";
         } else {
             alert('회원가입에 필요한 필수 항목을 입력해주세요.');
         }

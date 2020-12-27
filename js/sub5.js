@@ -106,7 +106,7 @@ function userSubmitFnc() {
     $('.conform').click(function () {
         if ($('.required').hasClass('valid') && !$('.memberInput').closest('td').prev('th').hasClass('error')) {
             alert('회원가입이 완료되었습니다. 로그인 페이지로 이동합니다.');
-            window.location.replace('../sub2.html')
+            location.href = "http://lxyex1379.dothome.co.kr/samchully/sub2.html";
         } else {
             alert('회원가입에 필요한 필수 항목을 입력해주세요.');
         }
