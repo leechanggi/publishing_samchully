@@ -223,6 +223,9 @@ body {
                 z-index: 5;
 
                 &.on {
+                    position: fixed;
+                    top: 30px;
+                    right: 40px;
                     >span {
                         &:nth-of-type(1) {
                             animation: allmenuSpan1on .75s forwards;
@@ -1108,6 +1111,31 @@ body {
 
     #container {
         overflow: hidden;
+        .row1{
+            clear: none;
+            .main-side{
+                display: none;
+            }
+            .main{
+                float: none;
+                width: 100vw;
+                padding-left: 0;
+                >h2{
+                    padding-top: 200px;
+                    text-align: center;
+                }
+                >p{
+                    text-align: center;
+                }
+            }
+        }
+        .row2{
+            width: 100vw;
+            .agreeArea-wrap{
+                width: calc(100vw - 80px);
+                max-width: 900px;
+            }
+        }
     }
 
     #footer{
@@ -1374,7 +1402,61 @@ body {
 
     #container {
         overflow: hidden;
-
+        .row1{
+            clear: none;
+            .main-side{
+                display: none;
+            }
+            .main{
+                float: none;
+                width: 100vw;
+                padding-left: 0;
+                >h2{
+                    padding-top: 200px;
+                    font-size: 32px;
+                    text-align: center;
+                }
+                >p{
+                    text-align: center;
+                    width: 73.61111111111111vw; //265px(360)
+                    margin: 0 auto;
+                    word-break: keep-all;
+                }
+            }
+        }
+        .row2{
+            width: 100vw;
+            >h3{
+                padding-top: 60px;
+                font-size: 28px;
+            }
+            >p{
+                font-size: 18px;
+            }
+            .agreeArea-wrap{
+                width: calc(100vw - 20px);
+                max-width: 900px;
+                margin-top: 10px;
+                padding: 20px;
+                .btnArea{
+                    width: 100%;
+                    .cancel{
+                        width: 50%;
+                        >a{
+                            width: 130px;
+                            margin: 0 auto;
+                        }
+                    }
+                    .conform{
+                        width: 50%;
+                        >a{
+                            width: 130px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #footer{

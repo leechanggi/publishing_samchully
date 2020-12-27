@@ -918,6 +918,12 @@ body {
   z-index: 5;
 }
 
+#header .header-section .gnb-wrap .btn-allmenu.on {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+}
+
 #header .header-section .gnb-wrap .btn-allmenu.on > span:nth-of-type(1) {
   animation: allmenuSpan1on .75s forwards;
   -webkit-animation: allmenuSpan1on .75s forwards;
@@ -1744,6 +1750,42 @@ body {
   #container {
     overflow: hidden;
   }
+  #container .row1 {
+    clear: none;
+  }
+  #container .row1 .main-side {
+    display: none;
+  }
+  #container .row1 .main {
+    float: none;
+    width: 100vw;
+    padding-left: 0;
+  }
+  #container .row1 .main > h2 {
+    padding-top: 200px;
+    text-align: center;
+  }
+  #container .row1 .main > p {
+    text-align: center;
+  }
+  #container .row2 .login-form-wrap {
+    width: 100vw;
+  }
+  #container .row2 .login-form-wrap .login-form {
+    width: calc(100vw - 80px);
+    max-width: 900px;
+  }
+  #container .row2 .loginSub-wrap {
+    width: 100vw;
+  }
+  #container .row2 .loginSub-wrap .loginSub {
+    width: calc(100vw - 80px);
+    max-width: 900px;
+  }
+  #container .row2 .loginSub-wrap .loginSub > ul > li {
+    word-break: keep-all;
+    padding: 20px;
+  }
   #footer {
     height: 70px;
   }
@@ -1949,6 +1991,98 @@ body {
   }
   #container {
     overflow: hidden;
+  }
+  #container .row1 {
+    clear: none;
+  }
+  #container .row1 .main-side {
+    display: none;
+  }
+  #container .row1 .main {
+    float: none;
+    width: 100vw;
+    padding-left: 0;
+  }
+  #container .row1 .main > h2 {
+    padding-top: 200px;
+    font-size: 32px;
+    text-align: center;
+  }
+  #container .row1 .main > p {
+    text-align: center;
+    width: 55.55555555555556vw;
+    margin: 0 auto;
+    word-break: keep-all;
+  }
+  #container .row2 > h3 {
+    padding-top: 60px;
+    font-size: 28px;
+  }
+  #container .row2 p {
+    font-size: 18px;
+  }
+  #container .row2 .login-form-wrap {
+    width: 100vw;
+  }
+  #container .row2 .login-form-wrap .login-form {
+    margin-top: 10px;
+    width: calc(100vw - 20px);
+    max-width: 900px;
+    padding: 20px;
+  }
+  #container .row2 .loginSub-wrap {
+    width: 100vw;
+  }
+  #container .row2 .loginSub-wrap .loginSub {
+    width: calc(100vw - 20px);
+    max-width: 900px;
+  }
+  #container .row2 .loginSub-wrap .loginSub > ul > li {
+    word-break: keep-all;
+    padding: 0;
+  }
+  #container .row2 .loginSub-wrap .loginSub > ul > li:nth-of-type(1) > a::before {
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #container .row2 .loginSub-wrap .loginSub > ul > li:nth-of-type(1) > a::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    content: '회원가입';
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: #d82b64;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #container .row2 .loginSub-wrap .loginSub > ul > li:nth-of-type(2) > a::before {
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #container .row2 .loginSub-wrap .loginSub > ul > li:nth-of-type(2) > a::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    content: '아이디/비밀번호 찾기';
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: #d82b64;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #container .row2 .loginSub-wrap .loginSub > ul > li > a > span {
+    display: none;
   }
   #footer {
     height: 70px;

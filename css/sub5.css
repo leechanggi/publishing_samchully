@@ -918,6 +918,12 @@ body {
   z-index: 5;
 }
 
+#header .header-section .gnb-wrap .btn-allmenu.on {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+}
+
 #header .header-section .gnb-wrap .btn-allmenu.on > span:nth-of-type(1) {
   animation: allmenuSpan1on .75s forwards;
   -webkit-animation: allmenuSpan1on .75s forwards;
@@ -1240,7 +1246,6 @@ body {
 }
 
 #container .row2 .join-box-wrap .join-box table tbody tr th {
-  text-align-last: left;
   font-weight: normal;
   font-size: 18px;
   position: relative;
@@ -1875,6 +1880,47 @@ body {
   #container {
     overflow: hidden;
   }
+  #container .row1 {
+    clear: none;
+  }
+  #container .row1 .main-side {
+    display: none;
+  }
+  #container .row1 .main {
+    float: none;
+    width: 100vw;
+    padding-left: 0;
+  }
+  #container .row1 .main > h2 {
+    padding-top: 200px;
+    text-align: center;
+  }
+  #container .row1 .main > p {
+    text-align: center;
+  }
+  #container .row2 {
+    width: 100vw;
+  }
+  #container .row2 .join-box-wrap {
+    width: calc(100vw - 40px);
+    max-width: 900px;
+  }
+  #container .row2 .join-box-wrap .join-box {
+    padding: 20px;
+  }
+  #container .row2 .join-box-wrap .join-box > table > tbody > .tr06 {
+    height: 150px;
+  }
+  #container .row2 .join-box-wrap .join-box > table > tbody > .tr06 td > .tr06-01 > span {
+    display: block;
+  }
+  #container .row2 .join-box-wrap .join-box > table > tbody > .tr09 > td > .address1 {
+    width: 300px;
+  }
+  #container .row2 .join-box-wrap .join-box > table > tbody > .tr09 > td > .address2 {
+    width: 196px;
+    text-indent: 5px;
+  }
   #footer {
     height: 70px;
   }
@@ -2080,6 +2126,100 @@ body {
   }
   #container {
     overflow: hidden;
+  }
+  #container .row1 {
+    clear: none;
+  }
+  #container .row1 .main-side {
+    display: none;
+  }
+  #container .row1 .main {
+    float: none;
+    width: 100vw;
+    padding-left: 0;
+  }
+  #container .row1 .main > h2 {
+    padding-top: 200px;
+    font-size: 32px;
+    text-align: center;
+  }
+  #container .row1 .main > p {
+    text-align: center;
+    width: 73.61111111111111vw;
+    margin: 0 auto;
+    word-break: keep-all;
+  }
+  #container .row2 {
+    width: 100vw;
+  }
+  #container .row2 .join-box-wrap {
+    width: calc(100vw - 20px);
+    height: auto;
+    max-width: 900px;
+  }
+  #container .row2 .join-box-wrap .join-box {
+    padding: 10px;
+  }
+  #container .row2 .join-box-wrap .join-box table tr th {
+    font-size: 16px !important;
+    word-break: keep-all;
+    padding-left: 0 !important;
+    text-align: center;
+  }
+  #container .row2 .join-box-wrap .join-box table tr th .icon-required {
+    display: none;
+  }
+  #container .row2 .join-box-wrap .join-box table tr th .icon-required::after {
+    display: none;
+  }
+  #container .row2 .join-box-wrap .join-box table tr td {
+    font-size: 16px !important;
+    word-break: keep-all;
+  }
+  #container .row2 .join-box-wrap .join-box table tr td input[type=text], #container .row2 .join-box-wrap .join-box table tr td input[type=password], #container .row2 .join-box-wrap .join-box table tr td input[type=email], #container .row2 .join-box-wrap .join-box table tr td input[type=tel] {
+    width: 68.33333333333333vw !important;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  #container .row2 .join-box-wrap .join-box table tr td span {
+    font-size: 15px !important;
+  }
+  #container .row2 .join-box-wrap .join-box table tr td a {
+    margin: 5px 0 !important;
+  }
+  #container .row2 .join-box-wrap .join-box > table > tbody > .tr06 {
+    height: 150px;
+  }
+  #container .row2 .join-box-wrap .join-box > table > tbody > .tr06 td > .tr06-01 > span {
+    display: block;
+  }
+  #container .row2 .join-box-wrap .join-box > table > tbody > .tr09 > td {
+    height: 150px;
+  }
+  #container .row2 .join-box-wrap .join-box > table > tbody > .tr09 > td > span {
+    margin-bottom: 0;
+  }
+  #container .row2 .join-box-wrap .join-box > table > tbody > .tr09 > td > .address1 {
+    width: 300px;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea {
+    width: 100%;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea .cancel {
+    width: 50%;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea .cancel > a {
+    width: 130px;
+    margin: 0 auto;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea .conform {
+    width: 50%;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea .conform > a {
+    width: 130px;
+    margin: 0 auto;
   }
   #footer {
     height: 70px;

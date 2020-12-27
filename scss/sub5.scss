@@ -223,6 +223,9 @@ body {
                 z-index: 5;
 
                 &.on {
+                    position: fixed;
+                    top: 30px;
+                    right: 40px;
                     >span {
                         &:nth-of-type(1) {
                             animation: allmenuSpan1on .75s forwards;
@@ -544,7 +547,6 @@ body {
                         tr{
                             height: 75px;
                             th{
-                                text-align-last: left;
                                 font-weight: normal;
                                 font-size: 18px;
                                 position: relative;
@@ -1258,6 +1260,59 @@ body {
 
     #container {
         overflow: hidden;
+        .row1{
+            clear: none;
+            .main-side{
+                display: none;
+            }
+            .main{
+                float: none;
+                width: 100vw;
+                padding-left: 0;
+                >h2{
+                    padding-top: 200px;
+                    text-align: center;
+                }
+                >p{
+                    text-align: center;
+                }
+            }
+        }
+        .row2{
+            width: 100vw;
+            .join-box-wrap{
+                width: calc(100vw - 40px);
+                max-width: 900px;
+                .join-box{
+                    padding: 20px;
+                    >table{
+                        >tbody{
+                            >.tr06{
+                                height: 150px;
+                                td{
+                                    >.tr06-01{
+                                        >span{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                            >.tr09{
+                                >td{
+                                    >.address1{
+                                        width: 300px;
+                                    }
+                                    >.address2{
+                                        width: 196px;
+                                        text-indent: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #footer{
@@ -1524,7 +1579,114 @@ body {
 
     #container {
         overflow: hidden;
-
+        .row1{
+            clear: none;
+            .main-side{
+                display: none;
+            }
+            .main{
+                float: none;
+                width: 100vw;
+                padding-left: 0;
+                >h2{
+                    padding-top: 200px;
+                    font-size: 32px;
+                    text-align: center;
+                }
+                >p{
+                    text-align: center;
+                    width: 73.61111111111111vw; //265px(360)
+                    margin: 0 auto;
+                    word-break: keep-all;
+                }
+            }
+        }
+        .row2{
+            width: 100vw;
+            .join-box-wrap{
+                width: calc(100vw - 20px);
+                height: auto;
+                max-width: 900px;
+                .join-box{
+                    padding: 10px;
+                    //table-common str.
+                    table{
+                        tr{
+                            th{
+                                font-size: 16px !important;
+                                word-break: keep-all;
+                                padding-left: 0 !important;
+                                text-align: center;
+                                .icon-required{
+                                    display: none;
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            td{
+                                font-size: 16px !important;
+                                word-break: keep-all;
+                                input[type=text], input[type=password], input[type=email], input[type=tel]{
+                                    width: 68.33333333333333vw !important; //246(360)
+                                    max-width: 300px;
+                                    @include els;
+                                }
+                                span{
+                                    font-size: 15px !important;
+                                }
+                                a{
+                                    margin: 5px 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    //table-common end.
+                    >table{
+                        >tbody{
+                            >.tr06{
+                                height: 150px;
+                                td{
+                                    >.tr06-01{
+                                        >span{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                            >.tr09{
+                                >td{
+                                    height: 150px;
+                                    >span{
+                                        margin-bottom: 0;
+                                    }
+                                    >.address1{
+                                        width: 300px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btnArea{
+                        width: 100%;
+                        .cancel{
+                            width: 50%;
+                            >a{
+                                width: 130px;
+                                margin: 0 auto;
+                            }
+                        }
+                        .conform{
+                            width: 50%;
+                            >a{
+                                width: 130px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #footer{

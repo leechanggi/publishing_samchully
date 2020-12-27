@@ -223,6 +223,9 @@ body {
                 z-index: 5;
 
                 &.on {
+                    position: fixed;
+                    top: 30px;
+                    right: 40px;
                     >span {
                         &:nth-of-type(1) {
                             animation: allmenuSpan1on .75s forwards;

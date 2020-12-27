@@ -918,6 +918,12 @@ body {
   z-index: 5;
 }
 
+#header .header-section .gnb-wrap .btn-allmenu.on {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+}
+
 #header .header-section .gnb-wrap .btn-allmenu.on > span:nth-of-type(1) {
   animation: allmenuSpan1on .75s forwards;
   -webkit-animation: allmenuSpan1on .75s forwards;

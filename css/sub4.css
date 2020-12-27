@@ -918,6 +918,12 @@ body {
   z-index: 5;
 }
 
+#header .header-section .gnb-wrap .btn-allmenu.on {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+}
+
 #header .header-section .gnb-wrap .btn-allmenu.on > span:nth-of-type(1) {
   animation: allmenuSpan1on .75s forwards;
   -webkit-animation: allmenuSpan1on .75s forwards;
@@ -1721,6 +1727,31 @@ body {
   #container {
     overflow: hidden;
   }
+  #container .row1 {
+    clear: none;
+  }
+  #container .row1 .main-side {
+    display: none;
+  }
+  #container .row1 .main {
+    float: none;
+    width: 100vw;
+    padding-left: 0;
+  }
+  #container .row1 .main > h2 {
+    padding-top: 200px;
+    text-align: center;
+  }
+  #container .row1 .main > p {
+    text-align: center;
+  }
+  #container .row2 {
+    width: 100vw;
+  }
+  #container .row2 .join-box-wrap {
+    width: calc(100vw - 80px);
+    max-width: 900px;
+  }
   #footer {
     height: 70px;
   }
@@ -1926,6 +1957,63 @@ body {
   }
   #container {
     overflow: hidden;
+  }
+  #container .row1 {
+    clear: none;
+  }
+  #container .row1 .main-side {
+    display: none;
+  }
+  #container .row1 .main {
+    float: none;
+    width: 100vw;
+    padding-left: 0;
+  }
+  #container .row1 .main > h2 {
+    padding-top: 200px;
+    font-size: 32px;
+    text-align: center;
+  }
+  #container .row1 .main > p {
+    text-align: center;
+    width: 73.61111111111111vw;
+    margin: 0 auto;
+    word-break: keep-all;
+  }
+  #container .row2 {
+    width: 100vw;
+  }
+  #container .row2 > h3 {
+    font-size: 28px;
+    padding-top: 60px;
+  }
+  #container .row2 p {
+    font-size: 18px;
+  }
+  #container .row2 .join-box-wrap {
+    width: calc(100vw - 20px);
+    max-width: 900px;
+    margin: 10px auto 0;
+  }
+  #container .row2 .join-box-wrap .join-box {
+    padding: 20px;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea {
+    width: 100%;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea .cancel {
+    width: 50%;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea .cancel > a {
+    width: 130px;
+    margin: 0 auto;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea .conform {
+    width: 50%;
+  }
+  #container .row2 .join-box-wrap .join-box .btnArea .conform > a {
+    width: 130px;
+    margin: 0 auto;
   }
   #footer {
     height: 70px;
