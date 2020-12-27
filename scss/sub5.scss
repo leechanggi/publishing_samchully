@@ -1603,6 +1603,13 @@ body {
         }
         .row2{
             width: 100vw;
+            >h3{
+                font-size: 28px;
+                padding-top: 60px;
+            }
+            p{
+                font-size: 18px;
+            }
             .join-box-wrap{
                 width: calc(100vw - 20px);
                 height: auto;
