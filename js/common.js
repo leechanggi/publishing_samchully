@@ -39,19 +39,32 @@ function gnbFnc() {
 }
 
 function allmenuFnc() {
-    var btnAllmenu = $('#header > .header-section > .gnb-wrap > .btn-allmenu')
-    var allmenuWrap = $('.allmenu-wrap')
+    var btnAllmenu = $('#header > .header-section > .gnb-wrap > .btn-allmenu');
+    var allmenuWrapPC = $('.allmenu-wrap');
+    var allmenuWrapMOB = $('.allmenu-wrap-MOB');
     btnAllmenu.click(function () {
-        if (allmenuWrap.hasClass('on')) {
-            allmenuWrap.removeClass('on');
-            btnAllmenu.removeClass('on');
-            btnAllmenu.addClass('off');
-            $('#header').css("z-index", "3");
-        } else {
-            allmenuWrap.addClass('on');
-            btnAllmenu.removeClass('off');
-            btnAllmenu.addClass('on');
-            $('#header').css("z-index", "auto");
+        if ($('html').hasClass('pc')) {
+            if (allmenuWrapPC.hasClass('on')) {
+                allmenuWrapPC.removeClass('on');
+                btnAllmenu.removeClass('on');
+                btnAllmenu.addClass('off');
+                $('#header').css("z-index", "3");
+            } else {
+                allmenuWrapPC.addClass('on');
+                btnAllmenu.removeClass('off');
+                btnAllmenu.addClass('on');
+                $('#header').css("z-index", "auto");
+            }
+        } else{
+            if (allmenuWrapMOB.hasClass('on')) {
+                allmenuWrapMOB.removeClass('on');
+                btnAllmenu.removeClass('on');
+                btnAllmenu.addClass('off');
+            } else {
+                allmenuWrapMOB.addClass('on');
+                btnAllmenu.removeClass('off');
+                btnAllmenu.addClass('on');
+            }
         }
     })
 }
@@ -64,6 +77,14 @@ function submenuFnc() {
             $(this).addClass('on');
         }else{
         }
+    })
+}
+
+function allmenuMob() {
+    var btnAllmenuToplist = $('.allmenuMob > li > a');
+    btnAllmenuToplist.click(function () {
+        btnAllmenuToplist.parent('li').siblings('li').removeClass('on');
+        $(this).parent('li').addClass('on');
     })
 }
 
@@ -80,9 +101,11 @@ function btnDetailViewFnc(){
     })
 }
 
+
 $(function () {
     gnbFnc();
     allmenuFnc();
     submenuFnc();
+    allmenuMob();
     btnDetailViewFnc();
 });
