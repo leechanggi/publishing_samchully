@@ -513,7 +513,6 @@ body {
 
     .row2 {
         width: 100%;
-        height: 100%;
         background-color: $mainColor-4;
 
         .submenu {
@@ -638,6 +637,7 @@ body {
 
         .tableStyle1 {
             width: 1100px;
+            height: 100%;
             margin: 0 auto;
             font-size: 18px;
 
@@ -662,6 +662,7 @@ body {
 
         .tableStyle2 {
             width: 1100px;
+            height: 100%;
             margin: 0 auto;
 
             thead {
@@ -718,11 +719,13 @@ body {
         //btn common str.
         .btnSubActive{
             display: none;
+            height: 0;
             width: 1200px;
             margin: 0 auto;
             padding-bottom: 100px;
             &.on{
                 display: block;
+                height: 100%;
             }
         }
         //btn common end.
