@@ -438,13 +438,18 @@ body {
             >h1 {
                 position: relative;
 
-                .logo {
+                .main-logo {
                     position: absolute;
                     top: 55px;
                     left: 50%;
                     transform: translateX(-50%);
                     width: 120px;
                     height: 150px;
+                    >a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
 

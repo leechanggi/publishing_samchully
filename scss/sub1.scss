@@ -446,6 +446,11 @@ body {
                     transform: translateX(-50%);
                     width: 120px;
                     height: 150px;
+                    >a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
 
@@ -752,14 +757,12 @@ body {
         //btn common str.
         .btnSubActive {
             display: none;
-            height: 0;
             width: 1200px;
             margin: 0 auto;
             padding-bottom: 100px;
 
             &.on {
                 display: block;
-                height: 100%;
             }
         }
 
@@ -1183,7 +1186,6 @@ body {
     }
 
     #container {
-        overflow: hidden;
 
         .row1 {
             clear: none;
@@ -1210,7 +1212,8 @@ body {
 
         .row2 {
             .submenu {
-                display: none;
+                height: 0;
+                overflow: hidden;
             }
 
             .subtitle {
@@ -1557,7 +1560,6 @@ body {
     }
 
     #container {
-        overflow: hidden;
 
         .row1 {
             clear: none;
@@ -1588,7 +1590,8 @@ body {
 
         .row2 {
             .submenu {
-                display: none;
+                height: 0;
+                overflow: hidden;
             }
 
             .subtitle {
